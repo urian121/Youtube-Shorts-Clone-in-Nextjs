@@ -1,4 +1,45 @@
-video {
+body,
+html {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #333;
+}
+
+.videoContainer {
+  width: 400px;
+  max-width: 700px;
+  height: 700px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.videoList {
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+.videoList::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
 }
